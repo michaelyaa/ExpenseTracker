@@ -1,4 +1,4 @@
-# Expenses Tracker
+# Expense Tracker
 
 It is a form that allows the user to enter a title for a purchase, a price, a date, and a place of purchase.
 
