@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
-import './ExpenseForm.css';
-
+import styled from 'styled-components';
 const ExpenseForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState('');
   const [enteredAmount, setEnteredAmount] = useState('');
@@ -41,23 +40,61 @@ const ExpenseForm = (props) => {
     setEnteredDate('');
     setEnteredLocation('');
   };
+  const Controls = styled.div`
+
+  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  `
+  const Control = styled.div`
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #7C83FD;
+  }
+  input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 20rem;
+    max-width: 100%;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  }
+  h2 {
+    fontFamily: Playfair Display
+    fontSize: 2.5em
+    color: #05070a
+    text-align: center;
+  }
+  `;
+  const Actions = styled.div`
+  {
+    text-align: right;
+  }
+  `;
 
   return (
     <div>
-      <h2 style={{fontFamily: 'Playfair Display', fontSize: '2.5em', color: '#05070a'}}>Track Your Spending</h2>
+      <h2>Track Your Spending</h2>
       <form onSubmit={submitHandler}>
-        <div className='new-expense__controls'>
-          <div className='new-expense__control'>
-            <label style={{color:'#193f70'}}>Purchase</label>
+        <Controls>
+          <Control>
+            <label style={{ color: '#193f70' }}>Purchase</label>
             <input
               placeholder='What did you buy'
               type='text'
               value={enteredTitle}
               onChange={titleChangeHandler}
             />
-          </div>
-          <div className='new-expense__control'>
-            <label style={{color:'#193f70'}}>Amount</label>
+          </Control>
+          <Control>
+            <label style={{ color: '#193f70' }}>Amount</label>
             <input
               placeholder='$ How much did you pay'
               type='number'
@@ -66,9 +103,9 @@ const ExpenseForm = (props) => {
               value={enteredAmount}
               onChange={amountChangeHandler}
             />
-          </div>
-          <div className='new-expense__control'>
-            <label style={{color:'#193f70'}}>Date</label>
+          </Control>
+          <Control>
+            <label style={{ color: '#193f70' }}>Date</label>
             <input
               type='date'
               min='2019-01-01'
@@ -76,21 +113,21 @@ const ExpenseForm = (props) => {
               value={enteredDate}
               onChange={dateChangeHandler}
             />
-          </div>
-          <div className='new-expense__control'>
-            <label style={{color:'#193f70'}}>Location</label>
+          </Control>
+          <Control>
+            <label style={{ color: '#193f70' }}>Location</label>
             <input
               placeholder='Where did you purchase'
               type='text'
               value={enteredLocation}
               onChange={locationChangeHandler}
             />
-          </div>
-        </div>
-        <div className='new-expense__actions'>
+          </Control>
+        </Controls>
+        <Actions>
           <button type='submit'>Add Expenses</button>
           <button type='button' onClick={props.onCancel}>Cancel</button>
-        </div>
+        </Actions>
       </form>
     </div>
   );
