@@ -44,11 +44,11 @@ const ExpenseForm = (props) => {
 
   return (
     <div>
-      <h2 style={{fontFamily: 'Playfair Display', fontSize: '2.5em', color: '#ffff'}}>Track Your Spending</h2>
+      <h2 style={{fontFamily: 'Playfair Display', fontSize: '2.5em', color: '#05070a'}}>Track Your Spending</h2>
       <form onSubmit={submitHandler}>
         <div className='new-expense__controls'>
           <div className='new-expense__control'>
-            <label>Purchase</label>
+            <label style={{color:'#193f70'}}>Purchase</label>
             <input
               placeholder='What did you buy'
               type='text'
@@ -57,7 +57,7 @@ const ExpenseForm = (props) => {
             />
           </div>
           <div className='new-expense__control'>
-            <label>Amount</label>
+            <label style={{color:'#193f70'}}>Amount</label>
             <input
               placeholder='$ How much did you pay'
               type='number'
@@ -68,7 +68,7 @@ const ExpenseForm = (props) => {
             />
           </div>
           <div className='new-expense__control'>
-            <label>Date</label>
+            <label style={{color:'#193f70'}}>Date</label>
             <input
               type='date'
               min='2019-01-01'
@@ -78,7 +78,7 @@ const ExpenseForm = (props) => {
             />
           </div>
           <div className='new-expense__control'>
-            <label>Location</label>
+            <label style={{color:'#193f70'}}>Location</label>
             <input
               placeholder='Where did you purchase'
               type='text'

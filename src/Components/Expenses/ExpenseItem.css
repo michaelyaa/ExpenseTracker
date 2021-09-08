@@ -6,7 +6,7 @@
   align-items: center;
   padding: 0.5rem;
   margin: 1rem 0;
-  background-color: #000000;
+  background-color: #d3d3d3;
 }
 
 .expense-item__description {
@@ -20,45 +20,19 @@
 }
 
 .expense-item h2 {
-  color: #3a3a3a;
   font-size: 1rem;
   flex: 1;
   margin: 0 1rem;
-  color: #f7eeee;
+  color: #05070a;
   font-family: 'Playfair Display';
 }
 
 .expense-item__price {
   font-size: 1rem;
   font-weight: bold;
-  color: white;
-  background: rgb(6, 109, 196);
-  background: -moz-linear-gradient(
-    16deg,
-    rgba(6, 109, 196, 1) 3%,
-    rgba(69, 42, 188, 1) 20%,
-    rgba(56, 32, 166, 1) 46%,
-    rgba(53, 36, 168, 1) 69%,
-    rgba(6, 109, 196, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    16deg,
-    rgba(6, 109, 196, 1) 3%,
-    rgba(69, 42, 188, 1) 20%,
-    rgba(56, 32, 166, 1) 46%,
-    rgba(53, 36, 168, 1) 69%,
-    rgba(6, 109, 196, 1) 100%
-  );
-  background: linear-gradient(
-    16deg,
-    rgba(6, 109, 196, 1) 3%,
-    rgba(69, 42, 188, 1) 20%,
-    rgba(56, 32, 166, 1) 46%,
-    rgba(53, 36, 168, 1) 69%,
-    rgba(6, 109, 196, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#066dc4",endColorstr="#066dc4",GradientType=1);
-  border: 1px solid white;
+  color: #05070a;
+  background-color: #7C83FD;
+  border: 1px solid rgb(157, 155, 155);
   padding: 0.5rem;
   border-radius: 12px;
 }

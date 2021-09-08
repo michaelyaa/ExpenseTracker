@@ -4,24 +4,8 @@
   width: 5.5rem;
   height: 5.5rem;
   border: 1px solid #ececec;
-  background: #217ac4;
-  background: -moz-radial-gradient(
-    circle,
-    rgba(49, 48, 129, 1) 15%,
-    rgba(16, 3, 153, 1) 82%
-  );
-  background: -webkit-radial-gradient(
-    circle,
-    rgba(49, 48, 129, 1) 15%,
-    rgba(16, 3, 153, 1) 82%
-  );
-  background: radial-gradient(
-    circle,
-    rgba(49, 48, 129, 1) 15%,
-    rgba(16, 3, 153, 1) 82%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#313081",endColorstr="#100399",GradientType=1);
-  color: white;
+  background: #7C83FD;
+  color: #05070a;
   border-radius: 12px;
   align-items: center;
   justify-content: center;

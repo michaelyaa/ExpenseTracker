@@ -26,4 +26,4 @@ const ExpensesChart = (props) => {
   return <Chart dataPoints={chartDataPoints} />;
 };
 
-export default ExpensesChart;
+export default ExpensesChart

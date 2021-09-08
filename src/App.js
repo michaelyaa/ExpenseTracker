@@ -12,7 +12,7 @@ const SOME_EXPENSES = [
     date: new Date(2021, 12, 26),
     location: 'CrossWay FIS'
   },
-  
+
   {
     id: 'e10',
     title: 'Black Coffee',
@@ -25,49 +25,56 @@ const SOME_EXPENSES = [
     title: 'Phone Bill',
     amount: 152.38,
     date: new Date(2021, 2, 26),
-    location: 'CrossWay FIS'
+    location: 'T-Mobile'
   },
-  
+
   {
     id: 'e2',
     title: 'Black Coffee',
     amount: 6.12,
-    date: new Date(2021, 6, 24),
+    date: new Date(2020, 6, 24),
     location: 'Surf Cafè'
   },
   {
     id: 'e3',
     title: 'Essential Oil',
     amount: 94.12,
-    date: new Date(2021, 6, 17),
+    date: new Date(2021, 9, 17),
     location: 'CVS'
   },
-  { id: 'e4', 
-  title: 'LG TV', 
-  amount: 799.49, 
-  date: new Date(2021, 2, 16),
+  {
+    id: 'e3',
+    title: 'Phone Bill',
+    amount: 146.23,
+    date: new Date(2020, 7, 28),
+    location: 'AT&T'
+  },
+  { id: 'e4',
+  title: 'LG TV',
+  amount: 799.49,
+  date: new Date(2020, 2, 16),
   location: 'Best Buy'
 },
 {
   id: 'e5',
   title: 'Tooth Brush',
   amount: 9.21,
-  date: new Date(2021, 3, 9),
+  date: new Date(2020, 3, 9),
   location: 'CVS'
 },
-  
+
   {
     id: 'e6',
     title: 'New Desk (Wooden)',
     amount: 449.99,
-    date: new Date(2021, 5, 3),
+    date: new Date(2021, 11, 3),
     location: 'IKEA'
   },
   {
     id: 'e7',
     title: 'Watermelon',
     amount: 94.12,
-    date: new Date(2020, 7, 14),
+    date: new Date(2021, 8, 14),
     location: 'Walmart'
   },
   {
@@ -78,10 +85,10 @@ const SOME_EXPENSES = [
     location: 'Sweets & Suger'
   },
   {
-    id: 'e9',
+    id: 'e11',
     title: 'Beats Headphones',
     amount: 268.32,
-    date: new Date(2019, 12, 12),
+    date: new Date(2020, 7, 12),
     location: 'Apple'
   }
 ];

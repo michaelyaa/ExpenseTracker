@@ -1,30 +1,5 @@
 .new-expense {
-  background: rgb(6, 109, 196);
-  background: -moz-linear-gradient(
-    16deg,
-    rgba(6, 109, 196, 1) 3%,
-    rgba(69, 42, 188, 1) 20%,
-    rgba(56, 32, 166, 1) 46%,
-    rgba(53, 36, 168, 1) 69%,
-    rgba(6, 109, 196, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    16deg,
-    rgba(6, 109, 196, 1) 3%,
-    rgba(69, 42, 188, 1) 20%,
-    rgba(56, 32, 166, 1) 46%,
-    rgba(53, 36, 168, 1) 69%,
-    rgba(6, 109, 196, 1) 100%
-  );
-  background: linear-gradient(
-    16deg,
-    rgba(6, 109, 196, 1) 3%,
-    rgba(69, 42, 188, 1) 20%,
-    rgba(56, 32, 166, 1) 46%,
-    rgba(53, 36, 168, 1) 69%,
-    rgba(6, 109, 196, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#066dc4",endColorstr="#066dc4",GradientType=1);
+  background: #d3d3d3;
   opacity: 90%;
   padding: 1rem;
   margin: 2rem auto;
@@ -32,53 +7,27 @@
   max-width: 95%;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 1px 8px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }
 
 .new-expense button {
   font: inherit;
   cursor: pointer;
   padding: 1rem 2rem;
-  border: 1px solid #556ba7;
-  background-color: rgb(255, 255, 255);
-  color: #2b2da7;
+  border: 1px solid #101013;
+  background-color: #d3d3d3;
+  color: #05070a;
   border-radius: 12px;
   margin-right: 1rem;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }
 
 .new-expense button:hover,
 .new-expense button:active {
-  background: rgb(6, 109, 196);
-  background: -moz-linear-gradient(
-    16deg,
-    rgba(6, 109, 196, 1) 3%,
-    rgb(119, 95, 224) 20%,
-    rgb(77, 49, 197) 46%,
-    rgba(53, 36, 168, 1) 69%,
-    rgba(6, 109, 196, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    16deg,
-    rgba(6, 109, 196, 1) 3%,
-    rgba(69, 42, 188, 1) 20%,
-    rgba(56, 32, 166, 1) 46%,
-    rgba(53, 36, 168, 1) 69%,
-    rgba(6, 109, 196, 1) 100%
-  );
-  background: linear-gradient(
-    16deg,
-    rgba(6, 109, 196, 1) 3%,
-    rgba(69, 42, 188, 1) 20%,
-    rgba(56, 32, 166, 1) 46%,
-    rgba(53, 36, 168, 1) 69%,
-    rgba(6, 109, 196, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#066dc4",endColorstr="#066dc4",GradientType=1);
-  color: rgb(247, 248, 255);
-  border-color: #217ac4;
+  background-color: #c5c5c5;
 }
 
-.new-expense button.alternative {
+/* .new-expense button.alternative {
   color: #02183a;
   border-color: transparent;
   background-color: transparent;
@@ -87,4 +36,4 @@
 .new-expense button.alternative:hover,
 .new-expense button.alternative:active {
   background-color: #050202;
-}
+} */
