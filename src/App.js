@@ -1,34 +1,106 @@
+import { useState} from 'react';
 import './App.css';
-import Expense from './Components/Expenses/Expense';
+import Expenses from './Components/Expenses/Expenses';
 import NewExpense from './Components/NewExpense/NewExpense';
+// import PreLoader from './Components/PreLoader/PreLoader';
+
+const SOME_EXPENSES = [
+  {
+    id: 'e1',
+    title: 'Auto Insurance',
+    amount: 294.67,
+    date: new Date(2021, 12, 26),
+    location: 'CrossWay FIS'
+  },
+  
+  {
+    id: 'e10',
+    title: 'Black Coffee',
+    amount: 6.12,
+    date: new Date(2021, 6, 24),
+    location: 'Surf Cafè'
+  },
+  {
+    id: 'e1',
+    title: 'Phone Bill',
+    amount: 152.38,
+    date: new Date(2021, 2, 26),
+    location: 'CrossWay FIS'
+  },
+  
+  {
+    id: 'e2',
+    title: 'Black Coffee',
+    amount: 6.12,
+    date: new Date(2021, 6, 24),
+    location: 'Surf Cafè'
+  },
+  {
+    id: 'e3',
+    title: 'Essential Oil',
+    amount: 94.12,
+    date: new Date(2021, 6, 17),
+    location: 'CVS'
+  },
+  { id: 'e4', 
+  title: 'LG TV', 
+  amount: 799.49, 
+  date: new Date(2021, 2, 16),
+  location: 'Best Buy'
+},
+{
+  id: 'e5',
+  title: 'Tooth Brush',
+  amount: 9.21,
+  date: new Date(2021, 3, 9),
+  location: 'CVS'
+},
+  
+  {
+    id: 'e6',
+    title: 'New Desk (Wooden)',
+    amount: 449.99,
+    date: new Date(2021, 5, 3),
+    location: 'IKEA'
+  },
+  {
+    id: 'e7',
+    title: 'Watermelon',
+    amount: 94.12,
+    date: new Date(2020, 7, 14),
+    location: 'Walmart'
+  },
+  {
+    id: 'e8',
+    title: 'Birthday Cake',
+    amount: 41.28,
+    date: new Date(2020, 8, 16),
+    location: 'Sweets & Suger'
+  },
+  {
+    id: 'e9',
+    title: 'Beats Headphones',
+    amount: 268.32,
+    date: new Date(2019, 12, 12),
+    location: 'Apple'
+  }
+];
+
 const App = () => {
-  const expenses = [
-    {
-      id: 'e1',
-      title: 'Toilet Paper',
-      amount: 94.12,
-      date: new Date(2020, 7, 14),
-    },
-    { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12) },
-    {
-      id: 'e3',
-      title: 'Car Insurance',
-      amount: 294.67,
-      date: new Date(2021, 2, 28),
-    },
-    {
-      id: 'e4',
-      title: 'New Desk (Wooden)',
-      amount: 450,
-      date: new Date(2021, 5, 12),
-    },
-  ];
+  const [expenses, setExpenses] = useState(SOME_EXPENSES);
+
+  const addExpenseHandler = (expense) => {
+    setExpenses((prevExpenses) => {
+      return [expense, ...prevExpenses];
+    });
+  };
   return (
-    <div className="App">
-      <NewExpense />
-      <Expense items={expenses}/>
+    <div>
+        {/* <PreLoader/> */}
+      <NewExpense onAddExpense={addExpenseHandler} />
+      <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;

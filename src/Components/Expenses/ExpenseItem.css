@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 .expense-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
   margin: 1rem 0;
-  background-color: #252525;
+  background-color: #000000;
 }
 
 .expense-item__description {
@@ -22,14 +24,40 @@
   font-size: 1rem;
   flex: 1;
   margin: 0 1rem;
-  color: white;
+  color: #f7eeee;
+  font-family: 'Playfair Display';
 }
 
 .expense-item__price {
   font-size: 1rem;
   font-weight: bold;
   color: white;
-  background-color: rgb(41, 192, 41);
+  background: rgb(6, 109, 196);
+  background: -moz-linear-gradient(
+    16deg,
+    rgba(6, 109, 196, 1) 3%,
+    rgba(69, 42, 188, 1) 20%,
+    rgba(56, 32, 166, 1) 46%,
+    rgba(53, 36, 168, 1) 69%,
+    rgba(6, 109, 196, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    16deg,
+    rgba(6, 109, 196, 1) 3%,
+    rgba(69, 42, 188, 1) 20%,
+    rgba(56, 32, 166, 1) 46%,
+    rgba(53, 36, 168, 1) 69%,
+    rgba(6, 109, 196, 1) 100%
+  );
+  background: linear-gradient(
+    16deg,
+    rgba(6, 109, 196, 1) 3%,
+    rgba(69, 42, 188, 1) 20%,
+    rgba(56, 32, 166, 1) 46%,
+    rgba(53, 36, 168, 1) 69%,
+    rgba(6, 109, 196, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#066dc4",endColorstr="#066dc4",GradientType=1);
   border: 1px solid white;
   padding: 0.5rem;
   border-radius: 12px;

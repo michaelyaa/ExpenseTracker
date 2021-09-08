@@ -1,0 +1,35 @@
+
+.chart {
+    padding: 1rem;
+    border-radius: 12px;
+    background: rgb(6, 109, 196);
+    background: -moz-linear-gradient(
+      16deg,
+      rgba(6, 109, 196, 1) 3%,
+      rgba(69, 42, 188, 1) 20%,
+      rgba(56, 32, 166, 1) 46%,
+      rgba(53, 36, 168, 1) 69%,
+      rgba(6, 109, 196, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      16deg,
+      rgba(6, 109, 196, 1) 3%,
+      rgba(69, 42, 188, 1) 20%,
+      rgba(56, 32, 166, 1) 46%,
+      rgba(53, 36, 168, 1) 69%,
+      rgba(6, 109, 196, 1) 100%
+    );
+    background: linear-gradient(
+      16deg,
+      rgba(6, 109, 196, 1) 3%,
+      rgba(69, 42, 188, 1) 20%,
+      rgba(56, 32, 166, 1) 46%,
+      rgba(53, 36, 168, 1) 69%,
+      rgba(6, 109, 196, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#066dc4",endColorstr="#066dc4",GradientType=1);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    height: 10rem;
+  }
