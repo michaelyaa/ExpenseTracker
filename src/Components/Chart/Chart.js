@@ -1,11 +1,9 @@
-
 import React from 'react';
 
 import ChartBar from './ChartBar';
 import './Chart.css';
 import styled from 'styled-components'
-const Chart = styled.div`
-{
+const Chart = styled.div`{
   padding: 1rem;
   border-radius: 12px;
   background-color: #7C83FD;
