@@ -1,7 +1,7 @@
 # Getting Started with Expense Tracker
 
 ## Development
-Before you begin development, make sure you install these packages:
+Before you begin developing, make sure you install these packages:
 
 npm for node package management
 ```
